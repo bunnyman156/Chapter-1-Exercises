@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+    int c, i, j;
+    int alphabet[25];
+    int wcount[25];
+
+    for (i = 0; i <= 25; ++i)
+    {
+        alphabet[i] = 97 + i; // 97 is the asci value for A.
+        wcount[i] = 0;
+    }
+        
+        while ((c = getchar()) != EOF)
+            
+            for (i = 0; i<= 25; i++)
+                    
+                    if (c == alphabet[i])
+                            ++wcount[i];
+                            
+        printf("\n");
+      
+        for (i = 0; i <= 25; ++i)
+        {
+            printf("%c:", alphabet[i]);
+            
+            for (j = 1; j <= wcount[i]; ++j)
+                printf("*");
+            printf("\n");
+            
+        }
+        printf("\n");
+    
+    return 0;
+}
