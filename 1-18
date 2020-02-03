@@ -15,7 +15,7 @@ int main()
     return 0;
 }
 
-int remove (char[s])
+int removeline(char s[])
 
 {
     int i;
